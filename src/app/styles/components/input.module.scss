@@ -1,0 +1,36 @@
+$input-background: white;
+$input-text-color: black;
+$input-border-color: #cbd5e0;
+
+.input {
+  width: 100%;
+
+  label {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+    padding-left: 0.25rem;
+    font-weight: 700;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    color: white;
+  }
+
+  input {
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.5rem;
+    background-color: $input-background;
+    color: $input-text-color;
+    outline: 2px solid transparent;
+    font-weight: 200;
+    font-size: 1rem;
+    font-family: monospace;
+    outline-offset: 2px;
+    transition-duration: 200ms;
+    border: 1px solid $input-border-color;
+    width: 100%;
+
+    &:focus {
+      background-color: #f9fafb;
+    }
+  }
+}
